@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-8/root/usr/bin/c++      CMakeFiles/httpf.dir/webserver/src/main.cpp.o CMakeFiles/httpf.dir/webserver/src/buffer.cpp.o  -o /webserver/bin/httpf -rdynamic 

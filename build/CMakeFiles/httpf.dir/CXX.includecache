@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/webserver/include/buffer.h
+cstring
+-
+iostream
+-
+unistd.h
+-
+sys/uio.h
+-
+vector
+-
+atomic
+-
+assert.h
+-
+
+/webserver/include/main.h
+
+/webserver/src/buffer.cpp
+../include/buffer.h
+/webserver/include/buffer.h
+
+/webserver/src/main.cpp
+../include/main.h
+/webserver/include/main.h
+../include/buffer.h
+/webserver/include/buffer.h
+

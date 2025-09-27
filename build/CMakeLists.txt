@@ -21,3 +21,6 @@ add_executable(httpf ${MAIN_SRC})
 
 #链接库文件
 #target_link_libraries(httpf ${FUNC_LIB})
+
+#添加编译选项
+#add_compile_options(-std=c++11 -Wall -g)
