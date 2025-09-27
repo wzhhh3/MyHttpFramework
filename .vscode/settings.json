@@ -46,6 +46,7 @@
         "unordered_set": "cpp",
         "numeric": "cpp",
         "regex": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "string": "cpp"
     }
 }
