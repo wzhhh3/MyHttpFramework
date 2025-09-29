@@ -150,6 +150,33 @@ webserver/src/buffer.cpp.s:
 	$(MAKE) -f CMakeFiles/httpf.dir/build.make CMakeFiles/httpf.dir/webserver/src/buffer.cpp.s
 .PHONY : webserver/src/buffer.cpp.s
 
+webserver/src/log.o: webserver/src/log.cpp.o
+
+.PHONY : webserver/src/log.o
+
+# target to build an object file
+webserver/src/log.cpp.o:
+	$(MAKE) -f CMakeFiles/httpf.dir/build.make CMakeFiles/httpf.dir/webserver/src/log.cpp.o
+.PHONY : webserver/src/log.cpp.o
+
+webserver/src/log.i: webserver/src/log.cpp.i
+
+.PHONY : webserver/src/log.i
+
+# target to preprocess a source file
+webserver/src/log.cpp.i:
+	$(MAKE) -f CMakeFiles/httpf.dir/build.make CMakeFiles/httpf.dir/webserver/src/log.cpp.i
+.PHONY : webserver/src/log.cpp.i
+
+webserver/src/log.s: webserver/src/log.cpp.s
+
+.PHONY : webserver/src/log.s
+
+# target to generate assembly for a file
+webserver/src/log.cpp.s:
+	$(MAKE) -f CMakeFiles/httpf.dir/build.make CMakeFiles/httpf.dir/webserver/src/log.cpp.s
+.PHONY : webserver/src/log.cpp.s
+
 webserver/src/main.o: webserver/src/main.cpp.o
 
 .PHONY : webserver/src/main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... webserver/src/buffer.o"
 	@echo "... webserver/src/buffer.i"
 	@echo "... webserver/src/buffer.s"
+	@echo "... webserver/src/log.o"
+	@echo "... webserver/src/log.i"
+	@echo "... webserver/src/log.s"
 	@echo "... webserver/src/main.o"
 	@echo "... webserver/src/main.i"
 	@echo "... webserver/src/main.s"

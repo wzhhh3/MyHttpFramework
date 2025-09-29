@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/webserver/src/buffer.cpp" "/webserver/build/CMakeFiles/httpf.dir/webserver/src/buffer.cpp.o"
+  "/webserver/src/log.cpp" "/webserver/build/CMakeFiles/httpf.dir/webserver/src/log.cpp.o"
   "/webserver/src/main.cpp" "/webserver/build/CMakeFiles/httpf.dir/webserver/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

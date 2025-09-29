@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/httpf.dir/webserver/src/main.cpp.o"
+  "CMakeFiles/httpf.dir/webserver/src/log.cpp.o"
   "CMakeFiles/httpf.dir/webserver/src/buffer.cpp.o"
   "/webserver/bin/httpf.pdb"
   "/webserver/bin/httpf"
