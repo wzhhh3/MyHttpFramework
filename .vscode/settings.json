@@ -47,6 +47,9 @@
         "numeric": "cpp",
         "regex": "cpp",
         "algorithm": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "queue": "cpp"
     }
 }

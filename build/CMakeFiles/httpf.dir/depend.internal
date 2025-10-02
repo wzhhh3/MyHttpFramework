@@ -12,5 +12,7 @@ CMakeFiles/httpf.dir/webserver/src/log.cpp.o
 CMakeFiles/httpf.dir/webserver/src/main.cpp.o
  /webserver/include/blockqueue.h
  /webserver/include/buffer.h
+ /webserver/include/log.h
  /webserver/include/main.h
+ /webserver/include/threadpool.h
  /webserver/src/main.cpp

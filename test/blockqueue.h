@@ -100,6 +100,9 @@ template<typename T>
 bool BlockQueue<T>::pop(T& item) {
     unique_lock<mutex> locker(mtx_);
     while(deq_.empty()) {
+        if(isClose_){
+            return false;
+        }
         condConsumer_.wait(locker);     // 队列空了，需要等待
     }
     item = deq_.front();
