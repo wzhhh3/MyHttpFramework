@@ -8,7 +8,27 @@ project(http_framework)
 aux_source_directory(${PROJECT_BINARY_DIR}/../src MAIN_SRC)
 
 #引入头文件路径
-include_directories(${PROJECT_BINARY_DIR}/../include)
+include_directories(${PROJECT_BINARY_DIR}/../include /usr/include/mysql)
+
+#链接mysql库
+# 查找 MySQL 客户端库
+find_library(MYSQL_LIB 
+    NAMES 
+        mysqlclient 
+        mysqlclient_r 
+        mariadb
+    PATHS
+        /usr/lib64
+        /usr/lib
+        /usr/local/lib
+        /usr/lib64/mysql
+)
+
+if(MYSQL_LIB)
+    message(STATUS "Found MySQL library: ${MYSQL_LIB}")
+else()
+    message(FATAL_ERROR "MySQL client library not found! Please install mysql-devel or mariadb-devel")
+endif()
 
 #查找库文件
 #find_library(FUNC_LIB myfunc ${PROJECT_BINARY_DIR}/../lib)
@@ -23,7 +43,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 add_executable(httpf ${MAIN_SRC})
 
 #链接库文件
-#target_link_libraries(httpf ${FUNC_LIB})
-target_link_libraries(httpf pthread)
+target_link_libraries(httpf pthread ${MYSQL_LIB})
+
 #添加编译选项
 add_compile_options(-g -lpthread -std=c++11)# -Wall 
